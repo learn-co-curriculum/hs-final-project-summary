@@ -41,7 +41,7 @@ We want to display our goat in the goat view, so we'll need to create the instan
 
 Notice that we are storing this goat in an instance variable `@goat1`. We need to use an instance variable (and not a local variable) so that this goat is available outside of the `get '/goat'` method and can be displayed in the goat.erb view.
 
-We use erb tags to display embedded ruby our erb templates. Those tags looks like this `<%= %>`. So if we want to display the name of `@goat1` in our goat view we would add the following code to the goat.erb template:
+We use erb tags to display embedded ruby in our erb templates. Erb tags looks like this `<%= %>`. So if we want to display the name of `@goat1` in our goat view we would add the following code to the goat.erb template:
 
 ```erb
 <body>
@@ -49,18 +49,19 @@ We use erb tags to display embedded ruby our erb templates. Those tags looks lik
   <p>Name: <%= @goat1.name %></p>
 </body>
 ```
+Try adding the goat's name, age, pokes and milk in udder to your template.
 
-There is just one more step we need to take before this will work though, we need to make sure that the code in our `application_controller.rb` file has access to the code in our goat model. To do this, we need to require the `goat.rb` file by adding the following line of code to our application controller:
+There is just one more step we need to take before we will be able to see our new goats in the browser, we need to make sure that the code in our `application_controller.rb` file has access to the code in our goat model. To do this, we need to require the `goat.rb` file by adding the following line of code to the top of our `application_controller.rb` file:
 
 ```ruby
 require_relative './models/goat.rb'
 ```
 
-Now you can create as many instances of the goat as you want in the application controller. Boot up your server with the shotgun command from the terminal and take a look at your goats!
+Now you can create as many instances of the goat as you want in the application controller. Boot up your server with the shotgun command in the terminal and take a look at your goats!
 
 ### Sinatra MVC File Structure 
 
-Here is the file structure for your Sinatra project template.
+For your reference, here is the file structure for your Sinatra project template and a quick summary of what each of those directories and files does. 
 
 ```bash
 hs-mvc-interactive-practice
@@ -75,8 +76,6 @@ hs-mvc-interactive-practice
 ├── Gemfile
 └── README.md
 ```
-
-And here is a break down of what each of those directories and files does. 
 
 ### `models` directory
 
