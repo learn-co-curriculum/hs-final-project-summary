@@ -28,7 +28,7 @@ Your first step is to figure out what you want to build for your final project. 
 
 We will be using the Sinatra web framework to create web applications. Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. There is a `master` branch with a blank template and there is also completed project code in the `complete` branch.
 
-Once you've finished following along with the video to set up your project you'll be ready to add some embedded ruby to your views to display instances of your goat class. 
+Once you've finished following along with the video you'll be ready to add some embedded ruby to your views to display instances of your goat class. 
 
 We want to display an instance of our goat in our goat view, so we'll need to create it within our `/goat` route like so:
 
