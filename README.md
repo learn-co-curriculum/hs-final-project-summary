@@ -26,7 +26,7 @@ Your first step is to figure out what you want to build for your final project. 
 
 ### Sinatra Application
 
-Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project.
+Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. 
 
 ### Sinatra MVC File Structure 
 
@@ -40,7 +40,7 @@ hs-mvc-interactive-practice
 │   └── stylesheets
 ├── views
 │   └── index.erb
-├── application_controll.rb
+├── application_controller.rb
 ├── config.ru
 ├── Gemfile
 └── README.md
@@ -48,15 +48,25 @@ hs-mvc-interactive-practice
 
 And here is a break down of what each of those directories and files does. 
 
-#### config.ru
-
-A `config.ru` file is necessary if you are using a deployment tool such as `shotgun` (see `Gemfile`). It specifies to our app handler what files should be run in order to initialize a new server instance of our Sinatra application.
-
-#### `application_controller.rb` file
-
-Our `application_controller.rb` inherits from `Sinatra::Base`, which means it inherits all kinds of functionality from the Sinatra gem. This includes the ability to set up routes that correspond to URLs and display the appropriate HTML/CSS files in the browser. For instance when a user clicks on a link for contact info their browser should show a page with contact info. 
+### `models` directory
+This folder holds the logic behind your program. If you were building facebook you would save your user.rb file with a User class in this directory.
 
 #### `public` directory
 
-The `public` directory holds our front-end assets. In the example above, it holds a `stylesheets` directory where all of our stylesheets are located. Javascript directories and any other front-end assets would be stored in `public` as well.
+The `public` directory holds our front-end assets. In the example above, it holds a `stylesheets` directory where all of our stylesheets are located. Javascript directories and any other front-end assets (like image files) would be stored in `public` as well.
+
+### `views` directory
+In a Sinatra app we use .erb files instead of .html files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. 
+
+#### `application_controller.rb` file
+
+Our `application_controller.rb` inherits from `Sinatra::Base`, which means it inherits all kinds of functionality from the Sinatra gem. This includes the ability to set up routes that correspond to URLs and to display the appropriate .erb files (with HTML/CSS and embedded Ruby) in the browser. 
+
+#### `config.ru` file
+
+A `config.ru` file is necessary if you are using a deployment tool such as `shotgun` (see `Gemfile`). It specifies to our app handler what files should be run in order to initialize a new instance of our Sinatra application.
+
+#### 'Gemfile'
+
+
 
