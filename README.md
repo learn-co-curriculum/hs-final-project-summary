@@ -63,6 +63,8 @@ require_relative './models/goat.rb'
 
 Now you can create as many instances of the goat as you want in the application controller. Boot up your server with the shotgun command in the terminal and take a look at your goats!
 
+Now your turn, try adding a user model (user.rb file in the models directory), a user view (user.erb file in the views directory) and a '/users' route in the application controller. Create user instances and display their attributes, for example a user's name, age and birthday, in the view.
+
 ### Sinatra MVC File Structure 
 
 For your reference, here is the file structure for your Sinatra project template and a quick summary of what each of those directories and files does. 
