@@ -66,7 +66,11 @@ Our `application_controller.rb` inherits from `Sinatra::Base`, which means it in
 
 A `config.ru` file is necessary if you are using a deployment tool such as `shotgun` (see `Gemfile`). It specifies to our app handler what files should be run in order to initialize a new instance of our Sinatra application.
 
-#### 'Gemfile'
+#### `Gemfile`
+
+This holds a list of all the gems needed to run the application. For example, we need the `shotgun` gem to get a server started on our computer.
+
+
 
 
 
