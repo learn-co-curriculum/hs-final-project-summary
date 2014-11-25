@@ -28,6 +28,40 @@ Your first step is to figure out what you want to build for your final project. 
 
 Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. There is a `master` branch with a blank template and there is also completed project code in the `complete` branch.
 
+Once you've finished following along with the video to set up your project you'll be ready to add some embedded ruby to your views to display instances of your goat class. 
+
+We want to display an instance of our goat in our goat view, so we'll need to create it within our `/goat` route like so:
+
+```ruby
+  get '/goat' do
+    @goat1 = Goat.new("Callie",7)
+    erb :goat
+  end
+```
+
+Notice that we are storing this instance of the new goat in an instance variable `@goat1`. We need to use an instance variable (and not a local variable) so that this goat is available outside of the `get '/goat' method` and can be displayed in the goat.erb view.
+
+We use erb tags to display embedded ruby our erb templates. Those tags looks like this `<%= %>`. So if we want to display the name of `@goat1` in our goat view we would add the following code to the goat.erb template:
+
+```html
+<body>
+  <h1>Even MORE Fun With Goats</h1>
+
+    <p>Name: <%= @goat1.name %></p>
+
+</body>
+```
+
+
+
+There is just one more step we need to take before this will work though, we need to make sure that the code in our `application_controller.rb` file has access to the code in our goat.rb model. To do this, we need to require the `goat.rb` by adding the following line of code to our application controller:
+
+```ruby
+require_relative './models/goat.rb'
+```
+
+Now you can create as many instances of the goat as you want in the application controller! Boot up your server with the shotgun command from the terminal and take a look at your goats!
+
 ### Sinatra MVC File Structure 
 
 Here is the file structure for your Sinatra project template.
@@ -49,6 +83,7 @@ hs-mvc-interactive-practice
 And here is a break down of what each of those directories and files does. 
 
 ### `models` directory
+
 This folder holds the logic behind your program. If you were building facebook you would save your user.rb file with a User class in this directory.
 
 #### `public` directory
