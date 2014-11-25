@@ -26,7 +26,7 @@ Your first step is to figure out what you want to build for your final project. 
 
 ### Sinatra Application
 
-Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. 
+Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. There is a `master` branch with a blank template and there is also completed project code in the `complete` branch.
 
 ### Sinatra MVC File Structure 
 
