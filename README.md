@@ -26,7 +26,7 @@ Your first step is to figure out what you want to build for your final project. 
 
 ### Sinatra Application
 
-Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. There is a `master` branch with a blank template and there is also completed project code in the `complete` branch.
+We will be using the Sinatra web framework to create web applications. Fork and clone the MVC interactive practice lab on Ironboard and follow along with the video below to learn about Model-View-Controller (MVC) frameworks and how to use the Sinatra template we've provided for your own project. There is a `master` branch with a blank template and there is also completed project code in the `complete` branch.
 
 Once you've finished following along with the video to set up your project you'll be ready to add some embedded ruby to your views to display instances of your goat class. 
 
@@ -50,13 +50,13 @@ We use erb tags to display embedded ruby our erb templates. Those tags looks lik
 </body>
 ```
 
-There is just one more step we need to take before this will work though, we need to make sure that the code in our `application_controller.rb` file has access to the code in our goat.rb model. To do this, we need to require the `goat.rb` by adding the following line of code to our application controller:
+There is just one more step we need to take before this will work though, we need to make sure that the code in our `application_controller.rb` file has access to the code in our goat model. To do this, we need to require the `goat.rb` file by adding the following line of code to our application controller:
 
 ```ruby
 require_relative './models/goat.rb'
 ```
 
-Now you can create as many instances of the goat as you want in the application controller! Boot up your server with the shotgun command from the terminal and take a look at your goats!
+Now you can create as many instances of the goat as you want in the application controller. Boot up your server with the shotgun command from the terminal and take a look at your goats!
 
 ### Sinatra MVC File Structure 
 
