@@ -30,7 +30,7 @@ We will be using the Sinatra web framework to create web applications. Fork and 
 
 Once you've finished following along with the video you'll be ready to add some embedded ruby to your views to display instances of your goat class. 
 
-We want to display an instance of our goat in our goat view, so we'll need to create it within our `/goat` route like so:
+We want to display an instance of our goat in our goat view, so we'll need to create the instance of our goat within our `/goat` route like so:
 
 ```ruby
   get '/goat' do
