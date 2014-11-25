@@ -39,7 +39,7 @@ We want to display our goat in the goat view, so we'll need to create the instan
   end
 ```
 
-Notice that we are storing this instance of the new goat in an instance variable `@goat1`. We need to use an instance variable (and not a local variable) so that this goat is available outside of the `get '/goat' method` and can be displayed in the goat.erb view.
+Notice that we are storing this goat in an instance variable `@goat1`. We need to use an instance variable (and not a local variable) so that this goat is available outside of the `get '/goat'` method and can be displayed in the goat.erb view.
 
 We use erb tags to display embedded ruby our erb templates. Those tags looks like this `<%= %>`. So if we want to display the name of `@goat1` in our goat view we would add the following code to the goat.erb template:
 
