@@ -19,7 +19,7 @@ Your first step is to figure out what you want to build for your final project. 
 1. Forms for taking in data from a user.
 2. Scraping (pulling data out of existing websites)
 3. Text messaging capabilities.
-4. Emailing capabilites.
+4. Emailing capabilities.
 5. (Advanced) Database to store data
 
 + Start wireframing! What is your app going to do? What will your app look like? Come up with plans, and then run them by a teacher to make sure that they are feasible to accomplish in the next few weeks. The [gliffy](www.gliffy.com) app will be helpful for this. Here is a very basic wireframe for the first page of the Albert the Dog story that we storyboarded in class: http://www.gliffy.com/go/publish/6178111. 
@@ -43,16 +43,12 @@ Notice that we are storing this instance of the new goat in an instance variable
 
 We use erb tags to display embedded ruby our erb templates. Those tags looks like this `<%= %>`. So if we want to display the name of `@goat1` in our goat view we would add the following code to the goat.erb template:
 
-```html
+```erb
 <body>
   <h1>Even MORE Fun With Goats</h1>
-
-    <p>Name: <%= @goat1.name %></p>
-
+  <p>Name: <%= @goat1.name %></p>
 </body>
 ```
-
-
 
 There is just one more step we need to take before this will work though, we need to make sure that the code in our `application_controller.rb` file has access to the code in our goat.rb model. To do this, we need to require the `goat.rb` by adding the following line of code to our application controller:
 
