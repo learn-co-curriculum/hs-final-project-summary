@@ -68,7 +68,7 @@ A `config.ru` file is necessary if you are using a deployment tool such as `shot
 
 #### `Gemfile`
 
-This holds a list of all the gems needed to run the application. For example, we need the `shotgun` gem to get a server started on our computer.
+This holds a list of all the gems needed to run the application. For example, we need the `shotgun` gem to get a server started on our computer. All of the gems in a Gemfile can be downloaded by running the command `bundle install` from our terminal.
 
 
 
