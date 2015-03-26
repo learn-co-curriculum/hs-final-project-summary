@@ -26,7 +26,7 @@ Your first step is to figure out what you want to build for your final project. 
 
 ### Sinatra Application
 
-We will be using the Sinatra web framework to create web applications. Fork and clone the MVC interactive practice lab on Ironboard and follow along with this video
+We will be using the Sinatra web framework to create web applications. Fork and clone the MVC interactive practice lab on Learn and follow along with this video
 
 [https://vimeo.com/112848433](https://vimeo.com/112848433)
 
