@@ -1,7 +1,4 @@
----
-tags: kids, projects
-languages: ruby, html, css
----
+
 
 ## Final Project Summary
 
