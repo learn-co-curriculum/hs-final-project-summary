@@ -107,3 +107,5 @@ This holds a list of all the gems needed to run the application. For example, we
 
 
 
+
+<a href='https://learn.co/lessons/hs-final-project-summary' data-visibility='hidden'>View this lesson on Learn.co</a>
